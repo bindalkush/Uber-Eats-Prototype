@@ -1,0 +1,13 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full vertical height */
+    text-align: center;
+    background-image: url('https://nextbigtechnology.com/wp-content/uploads/2024/08/How-to-Develop-a-Food-Delivery-App-Like-Uber-Eats.jpg'); /* Use the background image */
+    background-size: cover; /* Ensure the image covers the full background */
+    background-position: center;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed;  /* Light background color */
+  }

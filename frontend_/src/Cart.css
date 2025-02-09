@@ -1,0 +1,120 @@
+/* Base container for the cart */
+.cart-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.cart-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-container li {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.cart-container h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.cart-container p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.cart-container .btn {
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-container .btn:disabled {
+    background-color: #ccc;
+}
+
+.cart-container select, .cart-container textarea {
+    width: 100%;  /* Ensure full width on small screens */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;  /* Ensures padding and border are included in width */
+}
+
+/* Responsive styles for tablets and smaller screens */
+@media (max-width: 768px) {
+    .cart-container {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .cart-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .cart-container h3 {
+        font-size: 1.1rem;
+    }
+
+    .cart-container p {
+        font-size: 0.9rem;
+    }
+
+    .cart-container .btn {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .cart-container select, .cart-container textarea {
+        font-size: 0.9rem;
+        width: 100%;  /* Ensure full width on smaller devices */
+    }
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 480px) {
+    .cart-container {
+        padding: 5px;
+    }
+
+    .cart-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .cart-container h3 {
+        font-size: 1rem;
+    }
+
+    .cart-container p {
+        font-size: 0.8rem;
+    }
+
+    .cart-container .btn {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+
+    .cart-container select, .cart-container textarea {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+}

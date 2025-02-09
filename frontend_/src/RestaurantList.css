@@ -1,0 +1,345 @@
+/* .restaurant-list {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .restaurant-list h2 {
+    text-align: center;
+    margin-bottom: 30px; 
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 20px; 
+  }
+  
+  
+  .restaurant-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    align-items: center; 
+  }
+  
+  
+  .restaurant-image-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .restaurant-image {
+    width: 100%;
+    max-width: 200px;  
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;  
+  
+  
+  .restaurant-name {
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  
+  .restaurant-details {
+    text-align: left;
+    width: 100%;  
+    margin-bottom: 15px;
+  }
+  
+  .restaurant-details p {
+    margin: 5px 0;
+    color: #555;
+  }
+
+  .restaurant-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;  
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .restaurant-grid {
+      grid-template-columns: repeat(2, 1fr);  
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .restaurant-grid {
+      grid-template-columns: repeat(1, 1fr);  
+    }
+    
+    .restaurant-item {
+      align-items: flex-start; 
+    }
+  
+    .restaurant-image {
+      max-width: 180px;  
+      height: 120px;
+    }
+  
+    .restaurant-name {
+      font-size: 1.3em;  
+    }
+  }
+  
+ 
+  @media (max-width: 480px) {
+    .restaurant-item {
+      padding: 15px;  
+    }
+  
+    .restaurant-image {
+      max-width: 150px; 
+      height: 100px;
+    }
+  
+    .restaurant-name {
+      font-size: 1.2em;  
+    }
+  
+    .restaurant-details p {
+      font-size: 0.9em;  
+    }
+  
+    .btn {
+      padding: 8px 12px;  
+    }
+  }
+   */
+
+
+   .restaurant-list {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.restaurant-list h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Default: 3 restaurants per row */
+    gap: 20px;  /* Space between the restaurant cards */
+}
+
+/* Styles for each restaurant card */
+.restaurant-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    align-items: center; /* Center items within the restaurant card */
+}
+
+/* Image container and image styling */
+.restaurant-image-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.restaurant-image {
+    width: 100%;
+    max-width: 200px;  /* Ensure the image doesn't stretch too large */
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;  /* Keep image ratio and fit the container */
+}
+
+/* Centered restaurant name */
+.restaurant-name {
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Left-aligned details for the restaurant */
+.restaurant-details {
+    text-align: left;
+    width: 100%;  /* Make sure the details take up the full width */
+    margin-bottom: 15px;
+}
+
+.restaurant-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Center the buttons and align them horizontally */
+.restaurant-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;  /* Space between the buttons */
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Ensure 2 restaurants per row for tablet-sized screens */
+@media (max-width: 1024px) {
+    .restaurant-grid {
+        grid-template-columns: repeat(2, 1fr);  /* 2 restaurants per row for tablet-sized screens */
+    }
+
+    .restaurant-item {
+        padding: 15px;
+    }
+
+    .restaurant-image {
+        max-width: 180px;
+        height: 120px;
+    }
+
+    .restaurant-name {
+        font-size: 1.4em;
+    }
+
+    .restaurant-details p {
+        font-size: 0.95em;
+    }
+}
+
+/* Switch to 1 restaurant per row for smaller devices */
+@media (max-width: 768px) {
+    .restaurant-grid {
+        grid-template-columns: repeat(1, 1fr);  /* 1 restaurant per row for smaller tablets and large mobile devices */
+    }
+
+    .restaurant-item {
+        align-items: flex-start; /* Align items to the start on smaller screens */
+    }
+
+    .restaurant-image {
+        max-width: 160px;
+        height: 110px;
+    }
+
+    .restaurant-name {
+        font-size: 1.3em;  /* Adjust font size for restaurant name on smaller screens */
+    }
+}
+
+/* Further adjustments for small mobile devices */
+@media (max-width: 480px) {
+    .restaurant-item {
+        padding: 12px;  /* Reduce padding on small screens */
+    }
+
+    .restaurant-image {
+        max-width: 140px;  /* Smaller image for mobile */
+        height: 90px;
+    }
+
+    .restaurant-name {
+        font-size: 1.2em;  /* Adjust font size on mobile */
+    }
+
+    .restaurant-details p {
+        font-size: 0.85em;  /* Reduce font size for details on mobile */
+    }
+
+    .btn {
+        padding: 8px 12px;  /* Smaller buttons on mobile */
+    }
+}
+
+/* Optional: Further reduce gap and padding for smaller mobile devices */
+@media (max-width: 480px) {
+    .restaurant-grid {
+        gap: 10px; /* Reduce the gap between items for small screens */
+    }
+
+    .restaurant-item {
+        padding: 10px;
+    }
+
+    .restaurant-image {
+        max-width: 140px;
+        height: 90px;
+    }
+
+    .restaurant-name {
+        font-size: 1.1em;
+    }
+
+    .restaurant-details p {
+        font-size: 0.85em;
+    }
+
+    .btn {
+        padding: 7px 10px;
+    }
+}

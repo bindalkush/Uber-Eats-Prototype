@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: backend
+          image: ubereats-prototype-backend:latest        #ubereats-prototype-backend:latest  # Use your backend image name
+          ports:
+            - containerPort: 8000
+          imagePullPolicy: IfNotPresent

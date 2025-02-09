@@ -1,0 +1,101 @@
+/* Container for customer orders */
+.customer-orders-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customer-orders-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* Style for each order */
+.customer-orders-list {
+    list-style: none;  /* Remove bullet points */
+    padding: 0;
+}
+
+.customer-orders-list li {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* For ordered items within an order */
+.order-items-list {
+    list-style: none;  /* Remove bullet points for order items */
+    padding-left: 0;
+}
+
+.order-items-list li {
+    margin-bottom: 5px;
+    background-color: transparent; /* No box background */
+    padding: 5px 0;
+    font-size: 1rem;
+}
+
+/* Styling for the order details */
+.customer-orders-list strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Horizontal line between orders */
+.customer-orders-list hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 768px) {
+    .customer-orders-container {
+        padding: 15px;
+    }
+
+    .customer-orders-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .customer-orders-list li {
+        padding: 15px;
+    }
+
+    .customer-orders-list strong,
+    .customer-orders-list p {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+    .customer-orders-container {
+        padding: 10px;
+    }
+
+    .customer-orders-container h2 {
+        font-size: 1.3rem;
+    }
+
+    .customer-orders-list li {
+        padding: 10px;
+    }
+
+    .customer-orders-list strong,
+    .customer-orders-list p {
+        font-size: 0.9rem;
+    }
+
+    .order-items-list li {
+        font-size: 0.9rem;
+    }
+}
