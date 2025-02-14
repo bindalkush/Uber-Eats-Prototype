@@ -1,10 +1,4 @@
-
-# 🚀 Uber Eats Prototype - Lab 2
-
-### **Group 10**
-- **Sushma Tacholi Kudai** (017519060)  
-- **Shobhita Agrawal** (017552795)  
-- **Kush Bindal** (017441359)  
+# 🚀 Uber Eats Prototype
 
 ---
 
@@ -12,37 +6,60 @@
 1. [Project Overview](#project-overview)  
 2. [Technologies Used](#technologies-used)  
 3. [Setup and Deployment](#setup-and-deployment)  
-   - [Part 1: Dockerizing and Kubernetes Setup](#part-1-dockerizing-and-kubernetes-setup)  
-   - [Part 2: Kafka Integration](#part-2-kafka-integration)  
-   - [Part 3: MongoDB Integration](#part-3-mongodb-integration)  
-   - [Part 4: Redux Integration](#part-4-redux-integration)  
+   - [Part 1: System Design and Initial Deployment](#part-1-system-design-and-initial-deployment)  
+   - [Part 2: Dockerizing and Kubernetes Setup](#part-2-dockerizing-and-kubernetes-setup)  
+   - [Part 3: Kafka Integration](#part-3-kafka-integration)  
+   - [Part 4: MongoDB Integration](#part-4-mongodb-integration)  
+   - [Part 5: Redux Integration](#part-5-redux-integration)  
 4. [Contributors](#contributors)  
 
 ---
 
 ## 💡 Project Overview
-This project extends the Uber Eats Prototype, emphasizing the integration of Docker, Kubernetes, Kafka, MongoDB, and Redux for a scalable and distributed application.
+This project is a functional prototype of an Uber Eats-like platform that enables user interactions between customers and restaurant owners. The goal was to design a scalable and distributed system using Django for backend development and ReactJS for the frontend, with Docker, Kubernetes, Kafka, MongoDB, and Redux integrated for enhanced performance.
 
-**Key Features:**
-- Efficient deployment with Docker and Kubernetes.
-- Asynchronous messaging using Kafka.
-- Secure data storage using MongoDB.
+### **Key Features**
+- Secure user authentication with JWT.
+- Role-based access control for customers and restaurant owners.
+- Order management system for food delivery.
+- Asynchronous messaging with Kafka.
+- Scalable deployment using Docker and Kubernetes.
 - Centralized state management with Redux.
+- MongoDB Atlas for persistent storage.
 
 ---
 
 ## 🛠️ Technologies Used
-- **Backend**: Python, Django, MongoDB  
+- **Backend**: Django, Django REST Framework, Python  
 - **Frontend**: React, Redux  
+- **Database**: SQLite (Initial), MongoDB Atlas (Final)  
+- **Deployment**: Docker, Kubernetes, Netlify, Heroku  
 - **Event Streaming**: Kafka, Zookeeper  
-- **Deployment**: Docker, Kubernetes  
-- **Database**: MongoDB Atlas  
 
 ---
 
 ## ⚙️ Setup and Deployment
 
-### **Part 1: Dockerizing and Kubernetes Setup**
+### **Part 1: System Design and Initial Deployment**
+
+#### **Backend Architecture**
+- **Framework Selection**: Django REST Framework for building API endpoints.
+- **Authentication**: JWT-based authentication with separate roles for customers and restaurant owners.
+- **Database**: SQLite was initially used, later upgraded to MongoDB for scalability.
+
+#### **Frontend Architecture**
+- **SPA Design**: ReactJS with a component-based structure.
+- **Routing & Session Management**: React Router for navigation, Axios for API calls.
+- **State Management**: Redux for handling user authentication and order status.
+
+#### **Deployment Strategy**
+- **Frontend**: Deployed on Netlify.
+- **Backend**: Hosted on Heroku.
+- **Database**: MongoDB Atlas for persistent data storage.
+
+---
+
+### **Part 2: Dockerizing and Kubernetes Setup**
 
 #### **Docker Setup**
 1. Build Docker images:
@@ -80,7 +97,7 @@ This project extends the Uber Eats Prototype, emphasizing the integration of Doc
 
 ---
 
-### **Part 2: Kafka Integration**
+### **Part 3: Kafka Integration**
 1. Install Kafka and dependencies:
    ```bash
    pip install confluent-kafka
@@ -97,12 +114,12 @@ This project extends the Uber Eats Prototype, emphasizing the integration of Doc
 
 ---
 
-### **Part 3: MongoDB Integration**
+### **Part 4: MongoDB Integration**
 1. Configure MongoDB in `settings.py`:
    ```python
    DATABASES = {
        'default': {
-           'ENGINE': 'djangomi',
+           'ENGINE': 'djongo',
            'NAME': 'ubereats',
            'CLIENT': {
                'host': 'mongodb+srv://<username>:<password>@<cluster-url>/ubereats',
@@ -125,7 +142,7 @@ This project extends the Uber Eats Prototype, emphasizing the integration of Doc
 
 ---
 
-### **Part 4: Redux Integration**
+### **Part 5: Redux Integration**
 1. Install Redux dependencies:
    ```bash
    npm install @reduxjs/toolkit react-redux redux-thunk
@@ -136,8 +153,3 @@ This project extends the Uber Eats Prototype, emphasizing the integration of Doc
    ```
 
 ---
-
-## 🤝 Contributors
-- **Sushma Tacholi Kudai**  
-- **Shobhita Agrawal**  
-- **Kush Bindal**  
