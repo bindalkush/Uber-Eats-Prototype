@@ -15,6 +15,8 @@
 
 ---
 
+<img src="frontend_/img2.png" alt="Uber Eats Dashboard" width="500"/>
+
 ## 💡 Project Overview
 This project is a functional prototype of an Uber Eats-like platform that enables user interactions between customers and restaurant owners. The goal was to design a scalable and distributed system using Django for backend development and ReactJS for the frontend, with Docker, Kubernetes, Kafka, MongoDB, and Redux integrated for enhanced performance.
 
