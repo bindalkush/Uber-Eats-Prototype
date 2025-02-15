@@ -19,6 +19,8 @@
 **Public IP:** `3.129.95.65`  
 - [Uber Eats](https://profound-lollipop-db5787.netlify.app/)
 
+
+
 <img src="frontend_/img2.png" alt="Uber Eats Dashboard" width="500"/>
 
 ## 💡 Project Overview
